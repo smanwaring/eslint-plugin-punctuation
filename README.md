@@ -1,6 +1,6 @@
 # eslint-plugin-punctuation
 
-Linting rules for using appropriate punctuation symbols (like the apostrophe symbol) in string literals.
+Linting rules for using appropriate punctuation symbols (like the apostrophe symbol instead of a single quote) in string literals.
 
 ## Installation
 
@@ -31,11 +31,11 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "punctuation/rule-name": 2
+    "punctuation/prefer-apostrophe-in-string-literal": "error"
   }
 }
 ```
 
 ## Supported Rules
 
-- Fill in provided rules here
+- prefer-apostrophe-in-string-literal

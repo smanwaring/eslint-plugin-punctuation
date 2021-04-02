@@ -8,10 +8,8 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require("../../../lib/rules/prefer-apostrophe-in-string-literal"),
-
-    RuleTester = require("eslint").RuleTester;
-
+var rule = require("../../../src/rules/prefer-apostrophe-in-string-literal");
+var RuleTester = require("eslint").RuleTester;
 
 //------------------------------------------------------------------------------
 // Tests
@@ -19,19 +17,28 @@ var rule = require("../../../lib/rules/prefer-apostrophe-in-string-literal"),
 
 var ruleTester = new RuleTester();
 ruleTester.run("prefer-apostrophe-in-string-literal", rule, {
-
     valid: [
-
-        // give me some code that won't trigger a warning
+        {
+            code: "myFunc(\'The Cat’s Pajamas\')",
+        },
+        {
+            code: "throw new Error(\"The cat's pajamas\")"
+        },
+        {
+            code: "it(\"The cat's pajamas\")"
+        },
+        {
+            code: "describe(\"The cat's pajamas\")"
+        }
     ],
 
     invalid: [
         {
-            code: "<p>The Cat's Pajamas</p>",
+            code: "myFunc(\"The Cat\'s Pajamas\")",
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: "Prefer apostrophe symbol ’ for conjunctions and possesesives.",
+                type: "Literal"
             }]
-        }
+        },
     ]
 });
