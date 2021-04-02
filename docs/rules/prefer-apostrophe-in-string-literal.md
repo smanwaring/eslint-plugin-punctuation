@@ -21,7 +21,6 @@ myFunc("The cat's pajamas");
 Examples of **correct** code for this rule:
 
 ```js
-// fill me in
 const myText = "We’ll go to the movies";
 
 <p>The cat’s pajamas</p>;
