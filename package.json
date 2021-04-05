@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-punctuation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Linting rules for using appropriate punctuation symbols (like the apostrophe symbol) in string literals.",
   "keywords": [
     "eslint",
@@ -13,15 +13,23 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "requireindex": "~1.1.0"
+    "requireindex": "~1.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.1.0",
+    "eslint": "^7.23.0",
     "mocha": "^7.2.0"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "license": "MIT",
-  "access": "public"
+  "access": "public",
+  "homepage": "https://github.com/smanwaring/eslint-plugin-punctuation#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smanwaring/eslint-plugin-punctuation"
+  },
+  "bugs": {
+    "url": "https://github.com/smanwaring/eslint-plugin-punctuation"
+  }
 }
