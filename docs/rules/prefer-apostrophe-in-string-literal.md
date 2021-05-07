@@ -1,7 +1,7 @@
-# Prefer use of the apostrophe symbol (instead of a single quote) in conjunctions or possessives in string literals. (prefer-apostrophe-in-string-literal)
+# Prefer use of the apostrophe symbol (instead of a single quote) in contractions or possessives in string literals. (prefer-apostrophe-in-string-literal)
 
 A little background:
-Although they look similar, the apostrophe is not the same thing as the single quotation mark. They are two different punctuation symbols. Single quotes should really be used for one thing: to indicate a quotation within a quotation, wheras aposrophes should be used in conjunctions or possesives.
+Although they look similar, the apostrophe is not the same thing as the single quotation mark. They are two different punctuation symbols. Single quotes should really be used for one thing: to indicate a quotation within a quotation, whereas apostrophes should be used in contractions or possesives.
 
 ## Rule Details
 
@@ -41,4 +41,4 @@ throw new Error("The cat's pajamas");
 
 ## When Not To Use It
 
-If you do not need to differentiate between single quotes (') and apostrophes (’) in conjunctions or possesives then you do not need this rule.
+If you do not need to differentiate between single quotes (') and apostrophes (’) in contractions or possesives then you do not need this rule.

@@ -1,5 +1,5 @@
 /**
- * @fileoverview Prefer use of the apostrophe symbol (instead of a single quote) in conjunctions or possessives in string literals.
+ * @fileoverview Prefer use of the apostrophe symbol (instead of a single quote) in contractions or possessives in string literals.
  * @author Stephanie Manwaring 
  */
 "use strict";
@@ -36,7 +36,7 @@ ruleTester.run("prefer-apostrophe-in-string-literal", rule, {
         {
             code: "myFunc(\"The Cat\'s Pajamas\")",
             errors: [{
-                message: "Prefer apostrophe symbol ’ for conjunctions and possesesives.",
+                message: "Prefer apostrophe symbol ’ for contractions and possesesives.",
                 type: "Literal"
             }]
         },
