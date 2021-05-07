@@ -1,11 +1,13 @@
 {
   "name": "eslint-plugin-punctuation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Linting rules for using appropriate punctuation symbols (like the apostrophe symbol) in string literals.",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "apostrophe",
+    "single quote"
   ],
   "author": "Stephanie Manwaring",
   "main": "src/index.js",

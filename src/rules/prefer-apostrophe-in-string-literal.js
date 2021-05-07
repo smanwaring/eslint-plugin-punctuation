@@ -1,5 +1,5 @@
 /**
- * @fileoverview Prefer use of the apostrophe symbol (instead of a single quote) in conjunctions or possessives in string literals.
+ * @fileoverview Prefer use of the apostrophe symbol (instead of a single quote) in contractions or possessives in string literals.
  * @author Stephanie Manwaring 
  */
 
@@ -9,7 +9,7 @@
 module.exports = {
   meta: {
       docs: {
-          description: "Prefer use of the apostrophe symbol (instead of a single quote) in conjunctions or possessives in string literals.",
+          description: "Prefer use of the apostrophe symbol (instead of a single quote) in contractions or possessives in string literals.",
           category: "Stylistic Issues",
           recommended: false
       },
@@ -19,7 +19,7 @@ module.exports = {
       ]
   },
   create: function(context) {
-      const ERROR_MESSAGE_PERFER_APOSTROPHE = "Prefer apostrophe symbol ’ for conjunctions and possesesives.";
+      const ERROR_MESSAGE_PERFER_APOSTROPHE = "Prefer apostrophe symbol ’ for contractions and possesesives.";
       // checks for the following pattens: a'b, abc'd, or abc'def ('b and b' are not matched)
       const IS_SINGLE_QUOTE_SURROUNEDED_BY_LETTERS_REGEX = /[A-Za-z](?=('(?=([A-Za-z]))))/g;
 
